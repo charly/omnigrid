@@ -1,5 +1,7 @@
 .bundle/
 .sass-cache/
+Gemfile.lock
+omnigrid*.gem
 log/*.log
 pkg/
 test/dummy/db/*.sqlite3
