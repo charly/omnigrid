@@ -1,0 +1,29 @@
+@function colwidth($num) {
+  @return nth(4.85% 13.45% 22.05% 30.75% 39.45% 48% 56.75% 65.4% 74.05% 82.7% 91.35% 100%, $num);
+}
+
+
+@mixin container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin row {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@mixin column {
+  margin-right: 3.8%;
+  float: left;
+  min-height: 1px;
+}
+
+@mixin grid($num: 1, $islast: false) {
+  @include column;
+  width: colwidth($num);
+  @if $islast == last { margin-right: 0px; float: left;}
+}

@@ -1,0 +1,46 @@
+/* ===========
+*   WIREFRAMES
+* ================ */
+
+// RENAMED BOURBON SAME FUNCTIO
+// The $gw-column and $gw-gutter variables must be defined in your base stylesheet to properly use the grid-width function.
+//
+//  $gw-column: 100px;         // Column Width
+//  $gw-gutter: 40px;          // Gutter Width
+//
+//  div {
+//    width: grid-width(4);    // returns 520px;
+//    margin-left: $gw-gutter; // returns 40px;
+//  }
+@function colwidth($n) {
+  @return $n * $gw-column + ($n - 1) * $gw-gutter;
+}
+
+/* 1kb Default : 12 columns, 60 pixels each, with 20 pixel gutter */
+$gw-column: 60px; 
+$gw-gutter: 20px; 
+
+
+@mixin container {
+  border-right: thick solid #EEE;
+  border-left: thick solid #EEE;
+}
+
+@mixin row {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+@mixin column {
+	margin: 0 10px;
+	overflow: hidden;
+	float: left;
+	display: inline;
+}
+
+@mixin grid($num: 1, $islast: false) {
+  @include column;
+  width: colwidth($num);
+  //@if $islast == last { margin-right: 0px; float: left;}
+}

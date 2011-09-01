@@ -1,0 +1,23 @@
+!!! 5
+%html
+  %head
+    %title Omnigrid
+    = stylesheet_link_tag    "omnigrid/application"
+    =# javascript_include_tag "application"
+    = csrf_meta_tags
+
+  %body.wireframed
+    #header
+      .row= render "/layouts/omnigrid/header"
+    #intro
+      .row= render "/layouts/omnigrid/intro"
+    #page
+      .row
+        .bullet
+          %p.wires Awesome
+        .bullet
+          %p.wires Great
+        .bullet.last
+          %p.wires Unforgettable
+    #footer
+      .row= render "/layouts/omnigrid/footer"
