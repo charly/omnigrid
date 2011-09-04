@@ -1,0 +1,43 @@
+/* =====================
+*   STRUCTURE (Skeleton)
+*
+* TODO explain function & specs of this
+* ======================= */
+
+#header, #intro, #page, #footer { @include container; }
+.row { @include row; }
+
+
+#header {
+  #logo {
+    @include grid(3);
+  }
+  
+  #menu {
+    @include grid(9, "last");
+  }  
+}
+
+#intro {
+  #catchphrase {
+    @include grid(12, "last")
+  }
+}
+
+#page {
+  #content {
+    @include grid(8);
+  }
+  
+  #sidebar {
+    @include grid(4, "last");
+  }
+  
+}
+
+#footer {
+  #copyright {
+    @include grid(12, "last");    
+  }
+}
+

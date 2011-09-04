@@ -6,8 +6,9 @@
  *require_tree . 
 */
 
-// CSS3 & MISC
-//@import "bourbon";
+// CSS3 & RESET
+//@import "bourbon"; 
+@import "mixins";  
 @import "reset";
 
 // GRID
@@ -16,5 +17,5 @@
 //@import "blueprint/mixins";
 
 // LOCALS
-@import "wireframe";
-@import "content";
+@import "structure";
+@import "wireframes";

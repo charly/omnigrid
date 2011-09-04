@@ -30,6 +30,6 @@ Now you can access omnigrid like that :
 
     localhost:3000/omnigrid
     
-## Choose & Generate & Wireframe to work on
+## Choose & Generate & Wireframe to Work on
 TODO
  

@@ -1,0 +1,7 @@
+$wire-color: #CCC;
+@mixin wired {
+  border-left: 1px solid $wire-color;
+  border-right: 1px solid $wire-color ;
+  border-bottom: 1px solid $wire-color;
+  color: #BBB;  
+}

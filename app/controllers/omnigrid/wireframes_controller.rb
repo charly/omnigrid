@@ -3,7 +3,11 @@ module Omnigrid
     layout :pick_layout
   
     def index
-      #render :inline => "hello"
+      #render "show"
+    end
+    
+    def show
+      
     end
   
   private
