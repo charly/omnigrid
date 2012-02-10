@@ -1,8 +1,17 @@
 Description:
-    Explain the generator
+    It will copy files in app/assets/omnigrid
 
 Example:
-    rails generate omnigrid Thing
+    rails generate omnigrid:install
 
     This will create:
-        what/will/it/create
+      app/assets/stylesheets/omnigrid/1140/
+      app/assets/stylesheets/omnigrid/1kb/
+      app/assets/stylesheets/omnigrid/blueprint/
+      and ....
+      app/assets/stylesheets/omnigrid/application.css.scss
+      app/assets/stylesheets/omnigrid/_mixins.css.scss
+      app/assets/stylesheets/omnigrid/_structure.css.scss
+      app/assets/stylesheets/omnigrid/_reset.css.scss
+      app/assets/stylesheets/omnigrid/_wireframes.css.scss
+

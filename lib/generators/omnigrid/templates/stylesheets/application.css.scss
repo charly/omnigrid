@@ -1,0 +1,22 @@
+/*
+ * FIXME: Introduce SCSS & Sprockets
+ *= require_self
+*/
+//@import "blueprint/reset";
+//@import "compass/reset";
+@import "omnigrid/application";
+@import "bourbon";
+@import "colors";
+@import "stylings";
+@import "elements";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+.ui-widget {
+  font-size: 11px;
+}

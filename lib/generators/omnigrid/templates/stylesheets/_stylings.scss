@@ -1,0 +1,23 @@
+.hide { display:none; }
+
+.small  { font-size: 9px; }
+.medium { font-size: 12px; }
+.large  { font-size: 14px; }
+
+.month0, .month3, .month6, .month9 {
+  border-left: 2px solid #777;
+}
+
+.month1, .month4, .month7, .month10 {
+  //border-left: thin solid #DDD;
+}
+
+
+.month2, .month5, .month8, .month11 {
+  border-left: 2px solid #CCC;
+}
+
+.green    { color: green; }
+.white, td.white    { color: #EEE;}
+.bgyellow { background-color: #EEC;}
+.bgred    { background-color: #A99;}

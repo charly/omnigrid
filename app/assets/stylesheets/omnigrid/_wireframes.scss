@@ -8,25 +8,21 @@ body.wireframed {
   .wires {
     @include wired;
     display: block;
-  }
-  p.wires {
-    line-height: 100px; 
-    text-align: center; 
+    min-height: 100px;
   }
 }
 
+// Alternate row colors
 body.wireframed > div:nth-child(odd) {
   background-color: #F1F1F1;
 }
 
-
-// Specifics height for blocks 
-#content, #sidebar, #intro { p.wires { line-height: 300px; } }
+// WIRE HEIGHTS
+#content, #sidebar, #intro {
+  .wires { min-height: 300px; }
+}
 
 
 // MISC
-.bullet {
-  @include grid(4);
-}
-
+.bullet { @include grid(4); }
 .bullet:nth-child(3) {margin-right: 0px;}

@@ -1,0 +1,22 @@
+!!! 5
+%html
+  %head
+    %title= "Perfbackbone2"
+    %meta{ 'http-equiv'=>'Content-Type', :content=>'text/html; charset=utf-8' }
+    %meta{ 'NAME'=>'Description', :content=>"" }
+    %link(rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/ui-lightness/jquery-ui.css")
+    %link(href="http://fonts.googleapis.com/css?family=Lekton&v1" rel="stylesheet" type="text/css")
+    = stylesheet_link_tag "application"
+    = favicon_link_tag
+  %body
+    #header
+      .row= render "/layouts/header"
+
+    #intro=# render "layouts/intro"
+    #page
+      .row
+        #content= yield
+    #footer= render "layouts/footer"
+
+  = javascript_include_tag "application"
+

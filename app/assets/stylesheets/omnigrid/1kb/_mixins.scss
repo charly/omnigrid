@@ -1,6 +1,6 @@
-/* ===========
-*   WIREFRAMES
-* ================ */
+/* ====================
+*   1kb (960 likish)
+* ====================== */
 
 // RENAMED BOURBON SAME FUNCTIO
 // The $gw-column and $gw-gutter variables must be defined in your base stylesheet to properly use the grid-width function.
@@ -17,13 +17,13 @@
 }
 
 /* 1kb Default : 12 columns, 60 pixels each, with 20 pixel gutter */
-$gw-column: 60px; 
-$gw-gutter: 20px; 
+$gw-column: 60px;
+$gw-gutter: 20px;
 
 
 @mixin container {
-  border-right: thick solid #EEE;
-  border-left: thick solid #EEE;
+  //border-right: thick solid #EEE;
+  //border-left: thick solid #EEE;
 }
 
 @mixin row {
