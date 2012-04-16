@@ -19,4 +19,5 @@ body {
 
 .ui-widget {
   font-size: 11px;
+  @include box-shadow(3px 3px 19px #AAA);
 }

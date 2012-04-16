@@ -1,0 +1,62 @@
+table {
+  width: 100%;
+  font-size: 11px;
+  margin-top: 18px;
+  border-collapse: collapse;
+
+  tr:nth-child(even) { background-color: #EFEFEF; }
+  tr:nth-child(even).bgyellow { background-color: #EEC;}
+
+  thead th {
+    //background-image: -moz-linear-gradient(-90deg, #EFEFEF, #DFE1E2);
+    @include linear-gradient(#EFEFEF, #DFE1E2);
+    box-shadow: #AAAAAA 0 1px 2px 0;
+    border-bottom: thin solid #EDEDED;
+    color: #5E6469;
+    text-align: center;
+  }
+
+  thead th:nth-child(1) {
+    @include border-radius(6px 0 0 0);
+  }
+
+  thead th:nth-last-child(1) {
+    @include border-radius(0 6px 0 0);
+  }
+
+  td, th {
+    border: 0;
+    padding: 6px 6px;
+    margin-right: 6px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+  }
+
+  tr {
+    cursor: pointer;
+  }
+
+  th {
+    color: white;
+    background-color: black;
+  }
+
+  td input {
+    font-size: 9px;
+  }
+
+  td textarea {
+    margin: 0;
+    padding:0;
+    font-family: Helvetica ;
+    font-size: 11px;
+    height: auto;
+  }
+
+  td input {
+    width: auto;
+    margin: 0;
+    padding:0;
+  }
+
+}
