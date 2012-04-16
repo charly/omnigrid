@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Charles Sistovaris"]
   s.email       = ["charlysisto@gmail.com"]
   s.homepage    = "http://github.com/charly/omnigrid"
-  s.summary     = %q{A common Sass API for popular css grids and a wireframe helper.} 
+  s.summary     = %q{A common Sass API for popular css grids and a wireframe helper.}
   s.description = %q{
 Omnigrid is a rails engine that acts as a facade to some popular grid system (Bluprint, 960, 1140)
 to instantely provide a structured/wireframed layout to work on.}
@@ -23,14 +23,14 @@ to instantely provide a structured/wireframed layout to work on.}
 #  instead of putting it all in your css... Omniauth hopes to bring the best of both world.
 #  Oh and sorry it's only a Rails 3.1 engine (for now?).
 #  }
-  
-  
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README"]
+
+
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.1.0"
-  s.add_dependency "haml", "~> 3.1.2"
-  s.add_dependency 'sass-rails', "~> 3.1.0"
+  s.add_dependency "rails", "~> 3.1"
+  s.add_dependency "haml", "~> 3.1"
+  s.add_dependency 'sass-rails', "~> 3.1"
   s.add_dependency "jquery-rails"
 
   s.add_development_dependency "sqlite3"
